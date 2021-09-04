@@ -9,15 +9,17 @@ Demo 演示页面：[https://migration-page.pages.dev](https://migration-page.pa
 
 ## Usage 用法
 
-`https://migration-page.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path`
+```bash
+https://migration-page.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
+`
 
 ### Parameters 参数
 
-`oldroot`: your old domain 你的旧域名  
-`newroot`: your new domain 你的新域名  
-`name`: intended name for your site 你的站点名称  
-`count`: time interval before the redirection 重定向前倒数的秒数  
-`location`: relative url path for the redirection  重定向的相对路径  
+- `oldroot`: your old domain 你的旧域名  
+- `newroot`: your new domain 你的新域名  
+- `name`: intended name for your site 你的站点名称  
+- `count`: time interval before the redirection 重定向前倒数的秒数  
+- `location`: relative url path for the redirection  重定向的相对路径  
 
 ## Deployment 部署
 
@@ -29,7 +31,7 @@ You are free to deploy this service for your own.
 Simply download the migration-page.html file, modify it if needed, then host it yourself via a web server.  
 下载 migration-page.html 文件，如有需要对文件作修改，然后通过一个服务器托管它。
 
-#### Commandline Download
+#### Commandline Download 命令行下载
 
 ```bash
 wget https://raw.githubusercontent.com/hifocus/Migration-Page/master/migration-page.html -O index.html
@@ -40,19 +42,19 @@ wget https://raw.githubusercontent.com/hifocus/Migration-Page/master/migration-p
 
 ### Advance Usage 进阶用法
 
-Migration page could be use as a NPM package.  
-Migration Page 可被以一个 NPM 包的形式使用。
+Migration page could be use as a [NPM package](https://en.wikipedia.org/wiki/Npm_(software)).  
+Migration Page 可被以一个 [NPM 包](https://zh.wikipedia.org/wiki/Npm)的形式使用。
 
 ```bash
 npm install
 npm run-script build
 ```
 
-A compressed migration-page.html will be output to /docs folder.  
-一个被压缩的 migration-page.html 将会被输出到 /docs 目录。
+A *compressed* [migration-page.html](https://github.com/hifocus/Migration-Page/blob/master/migration-page.html) will be output to `/docs` folder.  
+一个被压缩的 [migration-page.html](https://github.com/hifocus/Migration-Page/blob/master/migration-page.html) 将会被输出到 `/docs` 目录。
 
-You can use this feature to make ease for Serverless Hosting, Continuous Integration and your further development.  
-这个特性可为无服务器托管，持续集成和你的后续开发提供便利。
+You can use this feature to make ease for [Serverless Hosting](https://en.wikipedia.org/wiki/Serverless_computing), [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and your further development.  
+这个特性可为[无服务器托管](https://zh.wikipedia.org/wiki/%E7%84%A1%E4%BC%BA%E6%9C%8D%E5%99%A8%E8%A8%88%E7%AE%97)，[持续集成](https://zh.wikipedia.org/wiki/%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88)和你的后续开发提供便利。
 
 ## About 相关
 
