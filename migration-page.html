@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
     <meta charset="UTF-8">
-    <title>404 - 找不到页面</title>
+    <title>我们迁移啦~</title>
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
     <style>
         html, body{
@@ -16,7 +16,7 @@
             display: table;
             user-select: none;
             box-sizing: border-box;
-            font: lighter 20px "微软雅黑";
+            font: 20px "微软雅黑";
         }
         a{
             color: #3498db;
@@ -25,6 +25,7 @@
         h1{
             margin-top: 0;
             font-size: 3.5em;
+            line-height: 90%;
         }
         main{
             margin: 0 auto;
@@ -32,29 +33,62 @@
             display: table-cell;
             vertical-align: middle;
         }
-
+        .lower {
+            line-height: 80%;
+        }
         .btn{
             color: #fff;
             padding: .75em 1em;
             background: #3498db;
             border-radius: 1.5em;
             display: inline-block;
-            transition: opacity .3s, transform .3s;
-        }
-        .btn:hover{
-            transform: scale(1.1);
-        }
-        .btn:active{
-            opacity: .7;
+            transition: opacity .3s, transform .1s;
         }
     </style>
 </head>
 <body>
 <main>
-    <h1>:(</h1>
-    <p>嗨，朋友！看上去你输入的地址不存在哦~</p>
-    <p>你可以去浏览我的 <a href="https://paul.ren">首页</a> 或 <a href="https://paugram.com">博客</a> ~</p>
-    <a class="btn" href="https://paul.ren">返回首页</a>
+    <h1>惶心博客迁移啦 :)</h1>
+    <span class="lower">
+    <p id='ur-browsing'></p>
+    <p id='new-address'></p>
+    <p id='countdown'> </p>
+    <a class="btn" id='go-now'>立即前往</a>
+    </span>
 </main>
+
+<script>
+    var timeleft = 5;
+    const oldroot = 'www.justhx.com';
+    const newroot = 'huangxin.dev' 
+    const https = 'https://';
+    const url_string = window.location.href;
+    const url = new URL(url_string);
+    const param = url.searchParams.get("location")
+    if (param == null) {
+        var address = '';
+        console.log('yes')
+    }
+    else {
+        var address = '/' + param;
+        console.log('no')
+    }
+    document.getElementById('ur-browsing').innerHTML = '你正在浏览 - ' + oldroot + address;
+    document.getElementById('new-address').innerHTML = '新的地址是 - ' + '<span style="color:#1976D2;font-weight:500">' + newroot + '</span>' +address + '，请务必记住~';
+    document.getElementById('go-now').setAttribute('href', https + newroot + address);
+    document.getElementById('countdown').setAttribute('style', 'font-size:80%');
+    document.getElementById("countdown").innerHTML = timeleft + " 秒后为你重定向";
+    var downloadTimer = setInterval(function(){
+    if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "正在重定向……";
+    window.location.href = (https + newroot + address)
+    } else {
+    document.getElementById("countdown").innerHTML = timeleft - 1 + " 秒后为你重定向";
+    }
+    timeleft -= 1;
+    }, 1000);
+</script>
+
 </body>
 </html>
