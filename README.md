@@ -1,6 +1,7 @@
 # Migration Page - 迁移页
 
-> A simple, hosted, customisable migration page service. 简单，托管，可自定义的的迁移页服务。
+> A simple, hosted, customisable migration page service.
+> 简单，托管，可自定义的的迁移页服务。
 
 Demo 演示页面：[https://migration-page.pages.dev](https://migration-page.pages.dev/?oldroot=justhx.com&newroot=huangxin.dev&name=惶心博客（演示）&count=10&location=past-stories/the-winter-memory.html)
 
@@ -13,9 +14,13 @@ Demo 演示页面：[https://migration-page.pages.dev](https://migration-page.pa
 ### Parameters 参数
 
 `oldroot`: your old domain 你的旧域名
+
 `newroot`: your new domain 你的新域名
+
 `name`: intended name for your site 你的站点名称
+
 `count`: time interval before the redirection 重定向前倒数的秒数
+
 `location`: relative url path for the redirection  重定向的相对路径
 
 ## Deployment 部署
