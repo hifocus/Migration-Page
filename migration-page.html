@@ -16,7 +16,8 @@
             display: table;
             user-select: none;
             box-sizing: border-box;
-            font: 20px "微软雅黑";
+            font: 20px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
         }
         a{
             color: #3498db;
@@ -25,20 +26,21 @@
         h1{
             margin-top: 0;
             font-size: 3.5em;
-            line-height: 90%;
+            line-height: 105%;
         }
-        main{
+        main {
             margin: 0 auto;
             text-align: center;
             display: table-cell;
             vertical-align: middle;
+            line-height: 200%;
         }
         .lower {
             line-height: 80%;
         }
         .btn{
             color: #fff;
-            padding: .75em 1em;
+            padding: .85em 1em;
             background: #3498db;
             border-radius: 1.5em;
             display: inline-block;
@@ -53,7 +55,7 @@
     <p id='ur-browsing'></p>
     <p id='new-address'></p>
     <p id='countdown'> </p>
-    <a class="btn" id='go-now'>立即前往</a>
+    <p><a class="btn" id='go-now'>立即前往</a></p>
     </span>
 </main>
 
@@ -76,7 +78,7 @@
     document.getElementById('ur-browsing').innerHTML = '你正在浏览 - ' + oldroot + address;
     document.getElementById('new-address').innerHTML = '新的地址是 - ' + '<span style="color:#1976D2;font-weight:500">' + newroot + '</span>' +address + '，请务必记住~';
     document.getElementById('go-now').setAttribute('href', https + newroot + address);
-    document.getElementById('countdown').setAttribute('style', 'font-size:80%');
+    document.getElementById('countdown').setAttribute('style', 'font-size:85%');
     document.getElementById("countdown").innerHTML = timeleft + " 秒后为你重定向";
     var downloadTimer = setInterval(function(){
     if(timeleft <= 0){
