@@ -1,21 +1,62 @@
-# Emmm
-可能是最简单的服务器错误页面
+# Migration Page - 迁移页
 
-## 项目特性
-- 响应式设计
-- 无任何框架
-- 无任何外链资源
-- 经过 GZIP 后非常精简，兼容性非常好
+> A simple, hosted, customisable migration page service. 简单，托管，可自定义的的迁移页服务。
 
-## 使用方法
-1. `Star` 本项目
-2. 从这里 [下载](https://github.com/Dreamer-Paul/Emmm/archive/master.zip) 主题源码
-3. 修改模板的内容与链接
-4. 上传到你的服务器即可食用~
+Demo 演示页面：[https://migration-page.pages.dev](https://migration-page.pages.dev/?oldroot=justhx.com&newroot=huangxin.dev&name=惶心博客（演示）&count=10&location=past-stories/the-winter-memory.html)
 
-## 开源协议
-本项目采用 `MIT` 开源协议进行授权，转载或分发请注明 [本项目地址](https://github.com/Dreamer-Paul/Emmm)。
+!][Demo Screenshot 演示屏幕截图](https://vip1.loli.io/2021/09/05/ustYyUIzp5bOwrg.png)
 
-原创不易！如果喜欢本项目，请 `Star` 它以示对我的支持~
+## Usage 用法
 
-同时欢迎前往 [我的博客](https://paugram.com/about.html#donate) 为我提供赞助，谢谢您！
+`https://migration-page.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path`
+
+### Parameters 参数
+
+`oldroot`: your old domain 你的旧域名
+`newroot`: your new domain 你的新域名
+`name`: intended name for your site 你的站点名称
+`count`: time interval before the redirection 重定向前倒数的秒数
+`location`: relative url path for the redirection  重定向的相对路径
+
+## Deployment 部署
+
+You are free to deploy this service for your own.
+你可以自由地自行部署这个项目。
+
+### Simple Usage 普通用法
+
+Simply download the migration-page.html file, modify it if needed, then host it yourself via a web server.
+下载 migration-page.html 文件，如有需要对文件作修改，然后通过一个服务器托管它。
+
+#### Commandline Download
+
+```bash
+wget https://raw.githubusercontent.com/hifocus/Migration-Page/master/migration-page.html -O index.html
+
+# For restricted network environments 在受限的网络环境下使用
+# wget https://cdn.jsdelivr.net/gh/hifocus/Migration-Page/migration-page.html
+```
+
+### Advance Usage 进阶用法
+
+Migration page could be use as a NPM package.
+Migration Page 可被以一个 NPM 包的形式使用。
+
+```bash
+npm install
+npm run-script build
+```
+
+A compressed migration-page.html will be output to /docs folder.
+一个被压缩的 migration-page.html 将会被输出到 /docs 目录。
+
+You can use this feature to make ease for Serverless Hosting, Continuous Integration and your further development.
+这个特性可为无服务器托管，持续集成和你的后续开发提供便利。
+
+## About 相关
+
+This project is modified from on [Dreamer-Paul/Emmm](https://github.com/Dreamer-Paul/Emmm). The original author outlined some features of the base project which could be read from [here](https://github.com/Dreamer-Paul/Emmm#%E9%A1%B9%E7%9B%AE%E7%89%B9%E6%80%A7).
+
+这个项目是从 [Dreamer-Paul/Emmm](https://github.com/Dreamer-Paul/Emmm) 修改而来。原作者列出了原项目的一些特性，可以从这里[查看](https://github.com/Dreamer-Paul/Emmm#%E9%A1%B9%E7%9B%AE%E7%89%B9%E6%80%A7)。
+
+The software is released under the [MIT license](https://github.com/hifocus/Migration-Page/blob/master/LICENSE).
