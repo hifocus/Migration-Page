@@ -50,7 +50,7 @@
 </head>
 <body>
 <main>
-    <h1>惶心博客迁移啦 :)</h1>
+    <h1 id='migrated'></h1>
     <span class="lower">
     <p id='ur-browsing'></p>
     <p id='new-address'></p>
@@ -60,21 +60,33 @@
 </main>
 
 <script>
-    var timeleft = 5000000;
-    const oldroot = 'www.justhx.com';
-    const newroot = 'huangxin.dev' 
     const https = 'https://';
     const url_string = window.location.href;
     const url = new URL(url_string);
-    const param = url.searchParams.get("location")
+    var name1 = url.searchParams.get("name");
+    var oldroot = url.searchParams.get("oldroot");
+    var newroot = url.searchParams.get("newroot");
+    var param = url.searchParams.get("location");
+    var timeleft = url.searchParams.get("count");
+    if (name1 == null) {
+        var name1 = '惶心博客';
+    }
+    if (oldroot == null) {
+        var oldroot = 'www.justhx.com';
+    }
+    if (newroot == null) {
+        var newroot = 'huangxin.dev';
+    }
+    if (timeleft == null) {
+        var timeleft = '5000000';
+    }
     if (param == null) {
         var address = '';
-        console.log('yes')
     }
     else {
         var address = '/' + param;
-        console.log('no')
     }
+    document.getElementById('migrated').innerHTML = name1 + '迁移啦~';
     document.getElementById('ur-browsing').innerHTML = '你正在浏览 - ' + oldroot + address;
     document.getElementById('new-address').innerHTML = '新的地址是 - ' + '<span style="color:#1976D2;font-weight:500">' + newroot + '</span>' +address + '，请务必记住~';
     document.getElementById('go-now').setAttribute('href', https + newroot + address);
