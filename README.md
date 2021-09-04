@@ -5,7 +5,7 @@
 
 Demo 演示页面：[https://migration-page.pages.dev](https://migration-page.pages.dev/?oldroot=justhx.com&newroot=huangxin.dev&name=惶心博客（演示）&count=10&location=past-stories/the-winter-memory.html)
 
-![Demo Screenshot 演示屏幕截图](https://vip1.loli.io/2021/09/05/ustYyUIzp5bOwrg.png)
+![Demo Screenshot 演示屏幕截图](https://vip2.loli.io/2021/09/05/bOcgl67JUzkyTuE.png)
 
 ## Usage 用法
 
