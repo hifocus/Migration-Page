@@ -15,11 +15,11 @@ https://migration-page.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&
 
 ### Parameters 参数
 
-- `oldroot`: your old domain 你的旧域名  
-- `newroot`: your new domain 你的新域名  
-- `name`: intended name for your site 你的站点名称  
-- `count`: time interval before the redirection 重定向前倒数的秒数  
-- `location`: relative url path for the redirection  重定向的相对路径  
+- `oldroot` - your old domain 你的旧域名  
+- `newroot` - your new domain 你的新域名  
+- `name` - intended name for your site 你的站点名称  
+- `count` - time interval before the redirection 重定向前倒数的秒数  
+- `location` - relative url path for the redirection  重定向的相对路径  
 
 ## Deployment 部署
 
@@ -46,6 +46,7 @@ Migration page could be use as a [NPM package](https://en.wikipedia.org/wiki/Npm
 Migration Page 可被以一个 [NPM 包](https://zh.wikipedia.org/wiki/Npm)的形式使用。
 
 ```bash
+git clone https://github.com/hifocus/Migration-Page.git
 npm install
 npm run-script build
 ```
