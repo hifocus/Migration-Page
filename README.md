@@ -28,8 +28,8 @@ You are free to deploy this service for your own.
 
 ### Simple Usage 普通用法
 
-Simply download the migration-page.html file, modify it if needed, then host it yourself via a web server.  
-下载 migration-page.html 文件，如有需要对文件作修改，然后通过一个服务器托管它。
+Simply download the `migration-page.html` file, modify it if needed, then host it yourself via a web server.  
+下载 `migration-page.html` 文件，如有需要对文件作修改，然后通过一个服务器托管它。
 
 #### Commandline Download 命令行下载
 
@@ -37,7 +37,7 @@ Simply download the migration-page.html file, modify it if needed, then host it 
 wget https://raw.githubusercontent.com/hifocus/Migration-Page/master/migration-page.html -O index.html
 
 # For restricted network environments 在受限的网络环境下使用
-# wget https://cdn.jsdelivr.net/gh/hifocus/Migration-Page/migration-page.html
+# wget https://cdn.jsdelivr.net/gh/hifocus/Migration-Page/migration-page.html -O index.html
 ```
 
 ### Advance Usage 进阶用法
