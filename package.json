@@ -1,0 +1,24 @@
+{
+  "name": "migration-page",
+  "version": "1.0.0",
+  "description": "可能是最简单的服务器错误页面",
+  "main": "migration-page.html",
+  "scripts": {
+    "get": "mv migration-page.html public/index.html",
+    "minify": "html-minifier --input-dir ./public --output-dir ./public --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --file-ext html --minify-css true --minify-js true",
+    "build": "npm run-script get && npm run-script minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hifocus/Migration-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hifocus/Migration-Page/issues"
+  },
+  "homepage": "https://github.com/hifocus/Migration-Page#readme",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+  }
+}
