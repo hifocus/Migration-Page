@@ -11,7 +11,7 @@ Demo 演示页面：[https://migration-page.pages.dev](https://migration-page.pa
 
 ```bash
 https://migration-page.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
-`
+```
 
 ### Parameters 参数
 
