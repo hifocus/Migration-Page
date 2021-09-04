@@ -4,8 +4,8 @@
   "description": "可能是最简单的服务器错误页面",
   "main": "migration-page.html",
   "scripts": {
-    "get": "mv migration-page.html public/index.html",
-    "minify": "html-minifier --input-dir ./public --output-dir ./public --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --file-ext html --minify-css true --minify-js true",
+    "get": "rm -rf docs && mkdir docs && mv migration-page.html docs/index.html",
+    "minify": "html-minifier --input-dir ./docs --output-dir ./docs --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --file-ext html --minify-css true --minify-js true",
     "build": "npm run-script get && npm run-script minify"
   },
   "repository": {
