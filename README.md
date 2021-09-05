@@ -3,14 +3,14 @@
 > A simple, hosted, customisable migration page service.
 > 简单，托管，可自定义的的迁移页服务。
 
-Demo 演示页面：[https://migration-page.pages.dev](https://migration-page.pages.dev/?oldroot=justhx.com&newroot=huangxin.dev&name=惶心博客（演示）&count=10&location=past-stories/the-winter-memory.html)
+Demo 演示页面：[https://migration.pages.dev](https://migration.pages.dev/?oldroot=justhx.com&newroot=huangxin.dev&name=惶心博客（演示）&count=10&location=past-stories/the-winter-memory.html)
 
 ![Demo Screenshot 演示屏幕截图](https://vip2.loli.io/2021/09/05/bOcgl67JUzkyTuE.png)
 
 ## Usage 用法
 
 ```bash
-https://migration-page.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
+https://migration.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
 ```
 
 ### Parameters 参数
