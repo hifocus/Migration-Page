@@ -1,6 +1,6 @@
 # Migration Page - 迁移页
 
-> A simple, hosted, customisable migration page service.
+> A simple, hosted, customisable migration page service.  
 > 简单，托管，可自定义的的迁移页服务。
 
 Demo 演示页面：[https://migration.pages.dev](https://migration.pages.dev/?oldroot=justhx.com&newroot=huangxin.dev&name=惶心博客（演示）&count=10&location=past-stories/the-winter-memory.html)
@@ -20,6 +20,9 @@ https://migration.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=
 - `name` - intended name for your site 你的站点名称  
 - `count` - time interval before the redirection 重定向前倒数的秒数  
 - `location` - relative url path for the redirection  重定向的相对路径  
+
+> If a variable is missing, a preset value will take place. To avoid unwanted outcomes from the service, please always specify ALL variables, or modify and deploy the service on your own.  
+> 如果任意参数缺失，一个预设的值将会被使用。为了避免不想要的结果，请总是注明所有的变量，或者自行修改和部署此服务。
 
 ## Deployment 部署
 
