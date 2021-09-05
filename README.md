@@ -1,7 +1,9 @@
 # Migration Page - 迁移页
 
-> A simple, hosted, customisable migration page service.  
-> 简单，托管，可自定义的的迁移页服务。
+> A simple, customisable, hosted migration page service.  
+> 简单易用，可自定义的托管迁移页服务。
+
+Introductory Blog Post (Chinese) 介绍博文：[https://huangxin.dev/partly-technical/migration-page-introduction](https://huangxin.dev/partly-technical/migration-page-introduction)
 
 Demo 演示页面：[https://migration.pages.dev](https://migration.pages.dev/?oldroot=justhx.com&newroot=huangxin.dev&name=惶心博客（演示）&count=10&location=past-stories/the-winter-memory.html)
 
