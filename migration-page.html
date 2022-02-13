@@ -60,38 +60,27 @@
 </main>
 
 <script>
-    const https = 'https://';
     const url_string = window.location.href;
     const url = new URL(url_string);
-    var name1 = url.searchParams.get("name");
-    var oldroot = url.searchParams.get("oldroot");
-    var newroot = url.searchParams.get("newroot");
-    var param = url.searchParams.get("location");
-    var timeleft = url.searchParams.get("count");
-    if (name1 == null) {
-        var name1 = '惶心博客';
+
+    function getParams(param_name) {
+        return url.searchParams.get(param_name);
     }
-    if (oldroot == null) {
-        var oldroot = 'www.justhx.com';
-    }
-    if (newroot == null) {
-        var newroot = 'huangxin.dev';
-    }
-    if (timeleft == null) {
-        var timeleft = '5000000';
-    }
-    if (param == null) {
-        var address = '';
-    }
-    else {
-        var address = '/' + param;
-    }
-    document.getElementById('migrated').innerHTML = name1 + '迁移啦~';
+
+    const https = (getParams("insecure") == 'true') ? 'http://' : 'https://';
+    const siteName = (getParams("name") == null) ? '某个网站' : getParams("name");
+    const oldroot = (getParams("oldroot") == null) ? 'example.com' : getParams("oldroot");
+    const newroot = (getParams("newroot") == null) ? 'example.net' : getParams("newroot");
+    const address = (getParams("location") == null) ? '' : '/' + getParams("location");
+    let timeleft = (getParams("count") == null) ? '50000' : getParams("count");
+
+    document.getElementById('migrated').innerHTML = siteName + '迁移啦~';
     document.getElementById('ur-browsing').innerHTML = '你正在浏览 - ' + oldroot + address;
-    document.getElementById('new-address').innerHTML = '新的地址是 - ' + '<span style="color:#1976D2;font-weight:500">' + newroot + '</span>' +address + '，请务必记住~';
+    document.getElementById('new-address').innerHTML = '新的地址是 - ' + '<span style="color:#1976D2;font-weight:500">' + newroot + '</span>' + address + '，请务必记住~';
     document.getElementById('go-now').setAttribute('href', https + newroot + address);
     document.getElementById('countdown').setAttribute('style', 'font-size:85%');
     document.getElementById("countdown").innerHTML = timeleft + " 秒后为你重定向";
+    
     var downloadTimer = setInterval(function(){
     if(timeleft <= 0){
     clearInterval(downloadTimer);
@@ -103,6 +92,9 @@
     timeleft -= 1;
     }, 1000);
 </script>
+<script defer type="module" src="https://cdn.jsdelivr.net/npm/wc-github-corners@latest"></script>
+<github-corners fill="#0078e7" position="right" repo="hifocus/Migration-Page" blank></github-corners>
+
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "175424342354445080d432049ad6159a"}'></script><!-- End Cloudflare Web Analytics -->
 
 </body>
