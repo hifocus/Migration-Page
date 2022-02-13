@@ -13,7 +13,7 @@ Demo 演示页面：[https://migration.pages.dev](https://migration.pages.dev/?o
 ## Servicing Domains 服务域名
 
 - [migration.qrcdn.com](https://migration.qrcdn.com)
-- [migration.pages.dev](migration.pages.dev)
+- [migration.pages.dev](https://migration.pages.dev)
 
 ## Usage 用法
 
