@@ -4,7 +4,7 @@
   "description": "",
   "main": "migration-page.html",
   "scripts": {
-    "get": "rm -rf docs && mkdir docs && mv migration-page.html docs/index.html",
+    "get": "rm -rf docs && mkdir docs && mv migration-page.html docs/index.html && mv _headers docs/_headers",
     "minify": "html-minifier --input-dir ./docs --output-dir ./docs --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --file-ext html --minify-css true --minify-js true",
     "build": "npm run-script get && npm run-script minify"
   },
