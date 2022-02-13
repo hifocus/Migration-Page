@@ -1,7 +1,7 @@
 {
   "name": "migration-page",
   "version": "1.0.0",
-  "description": "可能是最简单的服务器错误页面",
+  "description": "",
   "main": "migration-page.html",
   "scripts": {
     "get": "rm -rf docs && mkdir docs && mv migration-page.html docs/index.html",
