@@ -10,10 +10,15 @@ Demo 演示页面：[https://migration.pages.dev](https://migration.pages.dev/?o
 
 ![Demo Screenshot 演示屏幕截图](https://vip2.loli.io/2021/09/05/bOcgl67JUzkyTuE.png)
 
+## Servicing Domains 服务域名
+
+- [migration.qrcdn.com](https://migration.qrcdn.com)
+- [migration.pages.dev](migration.pages.dev)
+
 ## Usage 用法
 
 ```bash
-https://migration.pages.dev/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
+https://migration.qrcdn.com/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
 ```
 
 ### Parameters 参数
