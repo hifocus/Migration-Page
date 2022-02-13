@@ -27,10 +27,12 @@ https://migration.qrcdn.com/?oldroot=old-domain.com&newroot=new-domain.com&name=
 - `newroot` - your new domain 你的新域名  
 - `name` - intended name for your site 你的站点名称  
 - `count` - time interval before the redirection 重定向前倒数的秒数  
-- `location` - relative url path for the redirection  重定向的相对路径  
+- `location` - relative url path for the redirection  重定向的相对路径
+- `insecure` - set to `true` to use the `http` protocol 设置为 `true` 以使用 `http` 协议  
 
-> If a variable is missing, a preset value will take place. To avoid unwanted outcomes from the service, please always specify ALL variables, or modify and deploy the service on your own.  
-> 如果任意参数缺失，一个预设的值将会被使用。为了避免不想要的结果，请总是注明所有的变量，或者自行修改和部署此服务。
+Placehoder values will be applied to absent variables. To avoid unwanted outcomes from the service, please always specify all variables, or modify and deploy the service on your own.
+
+如果任意参数缺失，一个预设的值将会被使用。为了避免不想要的结果，请总是注明所有的变量，或者自行修改和部署此服务。
 
 ## Deployment 部署
 
@@ -71,6 +73,5 @@ You can use this feature to make ease for [Serverless Hosting](https://en.wikipe
 ## About 相关
 
 This project is modified from on [Dreamer-Paul/Emmm](https://github.com/Dreamer-Paul/Emmm). The original author outlined some features of the base project which could be read from [here](https://github.com/Dreamer-Paul/Emmm#%E9%A1%B9%E7%9B%AE%E7%89%B9%E6%80%A7).  
-这个项目是从 [Dreamer-Paul/Emmm](https://github.com/Dreamer-Paul/Emmm) 修改而来。原作者列出了原项目的一些特性，可以从这里[查看](https://github.com/Dreamer-Paul/Emmm#%E9%A1%B9%E7%9B%AE%E7%89%B9%E6%80%A7)。
 
 The software is released under the [MIT license](https://github.com/hifocus/Migration-Page/blob/master/LICENSE).
