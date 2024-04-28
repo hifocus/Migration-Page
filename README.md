@@ -12,13 +12,13 @@ Demo 演示页面：[https://migration.pages.dev](https://migration.pages.dev/?o
 
 ## Servicing Domains 服务域名
 
-- [migration.qrcdn.com](https://migration.qrcdn.com)
+- [migration.huangxin.org](https://migration.huangxin.org)
 - [migration.pages.dev](https://migration.pages.dev)
 
 ## Usage 用法
 
 ```bash
-https://migration.qrcdn.com/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
+https://migration.huangxin.org/?oldroot=old-domain.com&newroot=new-domain.com&name=YOUR-SITE-NAME&count=999&location=some_url_path
 ```
 
 ### Parameters 参数
